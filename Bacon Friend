@@ -1,0 +1,36 @@
+game["Run Service"].RenderStepped:connect(function()
+    settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+    settings().Physics.AllowSleep = false
+    setsimulationradius(math.huge*math.huge,math.huge*math.huge)
+end)
+
+local char = game.Players.LocalPlayer.Character
+local mouse = game.Players.LocalPlayer:GetMouse()
+local UserInputService = game:GetService("UserInputService")
+
+local lav = char['Pal Hair'].Handle-----Here you put the name of the hat that you want(the name is in the dex)
+---------------------------------------------------lav is the name that we named the pal hair. U can put whatever name u want and replace it with all the lavs that u see in the script
+
+local lavPos = Instance.new("AlignPosition", lav)---Here is the naming for pos, Im doing lavPos
+
+local lavO = Instance.new("AlignOrientation", lav)--Here is for oriantation, im doing lavO 
+-----------------------------------------------------------------U name them however u want since it will be used for position and oriantation
+
+local att1 = Instance.new("Attachment")---Here we set attachment naming. i named it into att1 so it will be easier if i add another attachment i will name it like att2 etc
+
+lavPos.Responsiveness = 5----Rensonsiveness is like how stiff the movement of the hat will be in the position (like im saying lavPos)
+
+lavO.Responsiveness = 5---Here is the same thing for the oriantation
+
+lav.AccessoryWeld:Destroy()--Here im destroying the accessory welding so the will fall and i will be able to position it whenevr i want
+
+att1.Position = Vector3.new(3,1,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
+
+att1.Orientation = Vector3.new(0, 0, 0)---Here is the oriantation for the hat. Play arround with it to see how it works
+
+att1.Parent = char.HumanoidRootPart---This is the parenting. Parenting is like in which part of ur humanoid it will be placed
+
+lavPos.Attachment0 = lav.HairAttachment----)This whole this for making the console what type of attachment are you using.
+lavPos.Attachment1 = att1-------------------------)Right now it's a HairAttachment. There are hats that are HatAttchments, BodyBackAttachments etc
+lavO .Attachment0 = lav.HairAttachment-------)To see what is the attachment of the hat that u will use you go to the arrow next to the hat inside of ur name
+lavO.Attachment1 = att1----------------------------)
