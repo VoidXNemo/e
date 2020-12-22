@@ -129,3 +129,45 @@ cavPos.Attachment0 = cav.HairAttachment----)This whole this for making the conso
 cavPos.Attachment1 = att6-------------------------)Right now it's a HairAttachment. There are hats that are HatAttchments, BodyBackAttachments etc
 cavO .Attachment0 = cav.HairAttachment-------)To see what is the attachment of the hat that u will use you go to the arrow next to the hat inside of ur name
 cavO.Attachment1 = att6----------------------------)
+wait(10)
+att1.Position = Vector3.new(-3,3,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
+att2.Position = Vector3.new(3,3,2)
+att3.Position = Vector3.new(-3,5,2)
+att4.Position = Vector3.new(3,5,2)
+att5.Position = Vector3.new(-3,1,2)
+att6.Position = Vector3.new(3,1,2)
+wait(10)
+att1.Position = Vector3.new(3,1,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
+att2.Position = Vector3.new(-3,1,2)
+att3.Position = Vector3.new(3,3,2)
+att4.Position = Vector3.new(-3,3,2)
+att5.Position = Vector3.new(3,5,2)
+att6.Position = Vector3.new(-3,5,2)
+wait(10)
+att1.Position = Vector3.new(-3,3,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
+att2.Position = Vector3.new(3,3,2)
+att3.Position = Vector3.new(-3,5,2)
+att4.Position = Vector3.new(3,5,2)
+att5.Position = Vector3.new(-3,1,2)
+att6.Position = Vector3.new(3,1,2)
+wait(10)
+att1.Position = Vector3.new(3,1,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
+att2.Position = Vector3.new(-3,1,2)
+att3.Position = Vector3.new(3,3,2)
+att4.Position = Vector3.new(-3,3,2)
+att5.Position = Vector3.new(3,5,2)
+att6.Position = Vector3.new(-3,5,2)
+wait(10)
+att1.Position = Vector3.new(-3,3,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
+att2.Position = Vector3.new(3,3,2)
+att3.Position = Vector3.new(-3,5,2)
+att4.Position = Vector3.new(3,5,2)
+att5.Position = Vector3.new(-3,1,2)
+att6.Position = Vector3.new(3,1,2)
+wait(10)
+att1.Position = Vector3.new(-3,3,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
+att2.Position = Vector3.new(3,3,2)
+att3.Position = Vector3.new(-3,5,2)
+att4.Position = Vector3.new(3,5,2)
+att5.Position = Vector3.new(-3,1,2)
+att6.Position = Vector3.new(3,1,2)
