@@ -1,12 +1,13 @@
 game["Run Service"].RenderStepped:connect(function()
-    settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
-    settings().Physics.AllowSleep = false
-    setsimulationradius(math.huge*math.huge,math.huge*math.huge)
+	settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+	settings().Physics.AllowSleep = false
+	setsimulationradius(math.huge*math.huge,math.huge*math.huge)
 end)
 
 local char = game.Players.LocalPlayer.Character
 local mouse = game.Players.LocalPlayer:GetMouse()
 local UserInputService = game:GetService("UserInputService")
+local player = game.Players.LocalPlayer
 
 local lav = char['Pal Hair'].Handle-----Here you put the name of the hat that you want(the name is in the dex)
 local pav = char['LavanderHair'].Handle
@@ -129,45 +130,21 @@ cavPos.Attachment0 = cav.HairAttachment----)This whole this for making the conso
 cavPos.Attachment1 = att6-------------------------)Right now it's a HairAttachment. There are hats that are HatAttchments, BodyBackAttachments etc
 cavO .Attachment0 = cav.HairAttachment-------)To see what is the attachment of the hat that u will use you go to the arrow next to the hat inside of ur name
 cavO.Attachment1 = att6----------------------------)
-wait(10)
-att1.Position = Vector3.new(-3,3,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
-att2.Position = Vector3.new(3,3,2)
-att3.Position = Vector3.new(-3,5,2)
-att4.Position = Vector3.new(3,5,2)
-att5.Position = Vector3.new(-3,1,2)
-att6.Position = Vector3.new(3,1,2)
-wait(10)
-att1.Position = Vector3.new(3,1,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
-att2.Position = Vector3.new(-3,1,2)
-att3.Position = Vector3.new(3,3,2)
-att4.Position = Vector3.new(-3,3,2)
-att5.Position = Vector3.new(3,5,2)
-att6.Position = Vector3.new(-3,5,2)
-wait(10)
-att1.Position = Vector3.new(-3,3,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
-att2.Position = Vector3.new(3,3,2)
-att3.Position = Vector3.new(-3,5,2)
-att4.Position = Vector3.new(3,5,2)
-att5.Position = Vector3.new(-3,1,2)
-att6.Position = Vector3.new(3,1,2)
-wait(10)
-att1.Position = Vector3.new(3,1,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
-att2.Position = Vector3.new(-3,1,2)
-att3.Position = Vector3.new(3,3,2)
-att4.Position = Vector3.new(-3,3,2)
-att5.Position = Vector3.new(3,5,2)
-att6.Position = Vector3.new(-3,5,2)
-wait(10)
-att1.Position = Vector3.new(-3,3,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
-att2.Position = Vector3.new(3,3,2)
-att3.Position = Vector3.new(-3,5,2)
-att4.Position = Vector3.new(3,5,2)
-att5.Position = Vector3.new(-3,1,2)
-att6.Position = Vector3.new(3,1,2)
-wait(10)
-att1.Position = Vector3.new(-3,3,2)---Here im using vector3 to position the hat. it's the coordinates of of the hat position. Play arround with it to see how it works
-att2.Position = Vector3.new(3,3,2)
-att3.Position = Vector3.new(-3,5,2)
-att4.Position = Vector3.new(3,5,2)
-att5.Position = Vector3.new(-3,1,2)
-att6.Position = Vector3.new(3,1,2)
+mouse.KeyDown:connect(function(key)
+	    if key == "e" then
+		att1.Position = Vector3.new(-3,3,2)
+		att2.Position = Vector3.new(3,3,2)
+		att3.Position = Vector3.new(-3,5,2)
+		att4.Position = Vector3.new(3,5,2)
+		att5.Position = Vector3.new(-3,1,2)
+		att6.Position = Vector3.new(3,1,2)
+	end
+	    if key == "q" then
+		att1.Position = Vector3.new(3,1,2)
+		att2.Position = Vector3.new(-3,1,2)
+		att3.Position = Vector3.new(3,3,2)
+		att4.Position = Vector3.new(-3,3,2)
+		att5.Position = Vector3.new(3,5,2)
+		att6.Position = Vector3.new(-3,5,2)
+	end
+	end)
