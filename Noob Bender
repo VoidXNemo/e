@@ -148,6 +148,13 @@ mouse.KeyDown:connect(function(key)
 		att6.Position = Vector3.new(-3,5,2)
 	end
 	if key == "f" then
+	        Player = "LocalPlayer"
+                AnimationId = "313762630"
+		local Anim = Instance.new("Animation")
+		Anim.AnimationId = "rbxassetid://"..AnimationId
+		local Anim = game.Players[Player].Character.Humanoid:LoadAnimation(Anim)
+		Anim:Play()
+		Anim:AdjustSpeed(1)
 		att1.Position = Vector3.new(1,1,2)
 		att2.Position = Vector3.new(-1,1,2)
 		att3.Position = Vector3.new(3,3,2)
